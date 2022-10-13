@@ -1,0 +1,20 @@
+*{
+    /* font-family: 'IBM Plex Sans Hebrew', sans-serif; */
+    font-family: 'David Libre', serif;
+}
+
+body {
+    margin: 4vw;
+}
+
+.title {
+    text-align: center;
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+
+#description{
+    direction: rtl;
+    font-size: 1.5vw;
+}

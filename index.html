@@ -3,16 +3,33 @@
   <head>
     <title>HebrewType.xyz</title>
     <meta charset="UTF-8" />
-    <meta name="description" content="Hebrew Typography Research" />
+    <meta name="description" content="Hebrew Typography Research"/>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew&display=swap"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=David+Libre&display=swap">
+    
     <!-- stylesheets -->
-    <link rel="stylesheet" media="print" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css"/>
     <!-- JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   </head>
   <body>
-    <div>Hebrew Typography Research Publication & Archive</div>
+    <div class="title">Hebrew Typography Research Publication & Archive | מחקר הכתב העברי - כתב עת וגנזך </div>
     <div id="description">
-        <script type="text/javascript">$("#description").load("description.txt")</script>
+        <!-- <object data="description.txt" width="100%" height="100%">
+            Not supported
+        </object> -->
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $.get('description.txt', function(data) {
+                    $('#description').html(data);
+                });
+            })
+        </script>
     </div>
   </body>
 </html>
